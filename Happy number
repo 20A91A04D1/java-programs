@@ -1,0 +1,31 @@
+# java-programs
+package Numberpatterns;
+import java.util.*;
+public class happynumber {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		int result=num;
+		happynumber obj=new happynumber();
+		while(result!=1&&result!=4)
+		{
+			result=obj.display(result);
+		}
+		if(result==1)
+			System.out.println(num+"is ahappy number");
+		else
+			System.out.println(num+"is not a happy  number");
+	}
+int display(int num)
+{
+	int sum=0;
+	while(num>0)
+	{
+		int rem=num%10;
+		sum=sum+(rem*rem);
+		num=num/10;
+	}
+	return sum;
+}
+}
