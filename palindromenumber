@@ -1,0 +1,24 @@
+# java-programs
+package Numberpatterns;
+import java.util.*;
+public class palindrome {
+	public static void main(String[] args) {
+Scanner obj=new Scanner(System.in);
+System.out.println("ENter a number");
+int num=obj.nextInt();
+int rev=0,rem;
+int n=num;
+while(num!=0)
+{
+	rem=num%10;
+	rev=rev*10+rem;
+	num=num/10;
+}
+if(n==rev)
+	System.out.println(n+"is palindrome number");
+else
+	System.out.println(n+"is not palindrome number");
+	}
+	
+
+}
