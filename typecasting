@@ -1,0 +1,11 @@
+# java-programs
+package basics;
+public class typecasting {
+	public static void main(String[] args) {
+		byte b=10;
+		int i=b;
+		System.out.println("byte b="+b);
+		System.out.println("int i="+i);
+	}
+
+}
