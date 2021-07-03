@@ -1,0 +1,15 @@
+# java-programs
+package Stringclass;
+import java.util.*;
+public class total_words {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter sentence");
+		String str=sc.nextLine();
+		String words[]=str.split(" ");
+		System.out.println("No.of words="+words.length);
+		
+
+	}
+
+}
