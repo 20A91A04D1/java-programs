@@ -1,0 +1,17 @@
+# java-programs
+package Stringclass;
+import java.util.*;
+public class no_chars {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	System.out.println("Enter sentence");
+	String str=sc.nextLine();
+	String words[]=str.split(" ");
+	for(int i=0;i<words.length;i++)
+	{
+		String w=words[i];
+	
+	System.out.println(w+" "+w.length());
+	}
+	}
+}
